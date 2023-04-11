@@ -36,7 +36,7 @@ public class ConnectionTest {
 
     @Test
     void dataSourceConnectionPool() throws SQLException, InterruptedException {
-        //커넥션 풀링
+        //커넥션 풀링: HikariProxyConnection(Proxy) -> JdbcConnection(Target)
         HikariDataSource dataSource = new HikariDataSource();
         dataSource.setJdbcUrl(URL);
         dataSource.setUsername(USERNAME);
