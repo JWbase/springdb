@@ -14,7 +14,7 @@ public class CheckedTest {
     }
 
     @Test
-    void checked_thorw() {
+    void checked_throw() {
         Service service = new Service();
         Assertions.assertThatThrownBy(() -> service.callThrow()).isInstanceOf(MyCheckedException.class);
     }
