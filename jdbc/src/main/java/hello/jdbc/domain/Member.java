@@ -8,6 +8,7 @@ public class Member {
     private String memberId;
     private int money;
 
+
     public Member() {
     }
 
