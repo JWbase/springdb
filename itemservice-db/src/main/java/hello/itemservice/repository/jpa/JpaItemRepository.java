@@ -17,7 +17,7 @@ import java.util.Optional;
 
 @Slf4j
 @Repository
-@Transactional
+@Transactional //일반적으로 JPA에서 트랜잭션은 서비스 계층에 걸어주는 것이 맞음
 public class JpaItemRepository implements ItemRepository {
 
     private final EntityManager em;
